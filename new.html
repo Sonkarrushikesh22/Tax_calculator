@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Tax Calculator
+
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tax Calculator</h1>
+      <form id="form">
+        <div>
+          <label for="income">Income </label> 
+          
+        <input
+            type="text"
+            name="income"
+            id="income"
+            placeholder="Enter income"
+          />
+          <i class="fas fa-exclamation-circle failure-icon" data-tooltip="Input field cannot be empty and must be a number"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+
+        <div>
+          <label for="extraIncome">Extra Income</label>
+          
+          <input
+            type="text"
+            name="extraIncome"
+            id="extraIncome"
+            placeholder="Enter Extra Income"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"  data-tooltip="Input field cannot be empty and must be a number"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+
+        <div>
+          <label for="deductions">Deductions</label>
+          <i class="fa-solid fa-circle-question"></i>
+          <input
+            type="text"
+            name="dedcutions"
+            id="deductions"
+            placeholder="Enter dedcutions"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"  data-tooltip="Input field cannot be empty and must be a number"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+          
+            <input
+              type="text"
+              name="age"
+              id="age"
+              placeholder="Enter age"
+            />
+            <i class="fas fa-exclamation-circle failure-icon"  data-tooltip="Input field cannot be empty and must be a number"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="modal-close">&times;</span>
+              <p>Tax to be paid: <span id="taxAmount"></span></p>
+            </div>
+          </div>
+          
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
