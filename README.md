@@ -39,7 +39,7 @@ Test case 2: adding hover on error icon (present in all field):
 Test case 3: allowing user to type desired input without error:
 ![image](https://github.com/Sonkarrushikesh22/Tax_calculator/assets/98597295/1b1f95e2-b7e7-4aed-9a79-04162af4a62a)
 
-Test case 4: Error icons visible in the form by default.:
+Test case 4: Error icons not visible in the form by default.:
 ![image](https://github.com/Sonkarrushikesh22/Tax_calculator/assets/98597295/5a013550-eef0-469d-bacc-aa43de9709fa)
 
 
